@@ -98,7 +98,7 @@ class Bubble_ConfigNav_Block_Adminhtml_Page_Menu extends Mage_Adminhtml_Block_Pa
         }
 
         // Mark the new Config tab as active (and System as inactive) if we are in configuration section
-        if ($menu['system']['active']) {
+        if ($menu['system']['children']['config']['active']) {
             $menu['system']['active'] = false;
             $menu['config']['active'] = true;
         }
